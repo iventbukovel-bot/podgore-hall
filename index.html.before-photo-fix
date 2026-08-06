@@ -545,30 +545,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-
-<script id="force-event-hall-photo">
-document.addEventListener("DOMContentLoaded", function () {
-  const placeholder = [...document.querySelectorAll("body *")]
-    .find(el => el.children.length === 0 &&
-                el.textContent.trim() === "Фото сервісу");
-
-  if (placeholder) {
-    const block = placeholder.parentElement;
-
-    if (block) {
-      block.classList.add("venue-media");
-      block.innerHTML = `
-        <img
-          src="assets/event-hall-concept.jpg"
-          alt="Концепт зали Podgore Hall"
-          style="width:100%;height:100%;object-fit:cover;display:block"
-        >
-      `;
-    }
-  }
-});
-</script>
-
 </body>
 </html>
 
