@@ -27,46 +27,6 @@
 @media(max-width:650px){.wrap{width:min(var(--max),calc(100% - 28px))}.header-inner{height:74px}.logo img{width:108px}.nav-cta{display:none}.hero{padding-top:74px}.hero-copy{padding:75px 24px 55px}.hero h1{font-size:61px}.intro,.packages,.catering,.contact{padding:84px 0}.features,.pack-grid,.format-list,.footer-grid,.catering-options,.contact-form{grid-template-columns:1fr}.feature{min-height:auto}.section-head{display:block}.hall-copy{padding:65px 24px}.extras{grid-template-columns:1fr}.contact-form .full{grid-column:auto}.admin-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
-
-<style id="calc-result-color-update">
-.calc-result{
-  background:
-    radial-gradient(circle at 80% 10%, rgba(199,166,106,.18), transparent 34%),
-    linear-gradient(145deg,#24201b 0%,#151310 58%,#0d0c0b 100%) !important;
-  color:#f3eee5 !important;
-  border-left:1px solid rgba(234,216,173,.32) !important;
-  box-shadow:-28px 0 65px rgba(0,0,0,.22) !important;
-}
-.calc-result .eyebrow{
-  color:#c7a66a !important;
-}
-.calc-result .calc-total{
-  color:#ead8ad !important;
-  text-shadow:0 8px 35px rgba(199,166,106,.16);
-}
-.calc-result p{
-  color:#bcb2a4 !important;
-}
-.calc-result .calc-lines{
-  border-top-color:rgba(234,216,173,.24) !important;
-}
-.calc-result .calc-line{
-  border-bottom-color:rgba(234,216,173,.16) !important;
-}
-.calc-result .calc-line span{
-  color:#aaa092 !important;
-}
-.calc-result .calc-line b{
-  color:#f3eee5 !important;
-}
-.calc-result .btn{
-  background:linear-gradient(135deg,#ead8ad,#ad884b) !important;
-  color:#17130e !important;
-  border:none !important;
-  box-shadow:0 14px 35px rgba(199,166,106,.2);
-}
-</style>
-
 </head>
 <body>
 <header class="header"><div class="wrap header-inner"><a class="logo" href="#top"><img src="logo-original.png" alt="Підгірʼя"></a><nav class="nav"><a href="#spaces">Простір</a><a href="#packages">Пакети</a><a href="#calculator">Калькулятор</a><a href="#formats">Формати</a><a href="#contact">Контакти</a><a class="nav-cta" href="#contact">Забронювати</a></nav><button class="menu" aria-label="Меню">☰</button></div></header>
