@@ -67,50 +67,6 @@
 }
 </style>
 
-
-<style id="pretty-form-selects">
-.form-card select,
-form select {
-  -webkit-appearance:none !important;
-  appearance:none !important;
-  width:100% !important;
-  min-height:58px !important;
-  padding:0 52px 0 18px !important;
-  border:1px solid rgba(71,62,48,.18) !important;
-  border-radius:0 !important;
-  background:
-    linear-gradient(45deg,transparent 50%,#9f7b3f 50%) calc(100% - 22px) 50%/6px 6px no-repeat,
-    linear-gradient(135deg,#9f7b3f 50%,transparent 50%) calc(100% - 16px) 50%/6px 6px no-repeat,
-    linear-gradient(180deg,#fffdfa 0%,#f3ede4 100%) !important;
-  color:#201c17 !important;
-  font-family:Manrope,sans-serif !important;
-  font-size:15px !important;
-  font-weight:500 !important;
-  box-shadow:0 8px 24px rgba(46,39,30,.06) !important;
-  outline:none !important;
-  cursor:pointer !important;
-  transition:.25s ease !important;
-}
-
-.form-card select:hover,
-form select:hover {
-  border-color:rgba(159,123,63,.55) !important;
-  box-shadow:0 10px 28px rgba(46,39,30,.10) !important;
-}
-
-.form-card select:focus,
-form select:focus {
-  border-color:#b28a4a !important;
-  box-shadow:0 0 0 3px rgba(178,138,74,.10),0 10px 28px rgba(46,39,30,.10) !important;
-}
-
-.form-card select option,
-form select option {
-  background:#fffaf2 !important;
-  color:#201c17 !important;
-}
-</style>
-
 </head>
 <body>
 <header class="header"><div class="wrap header-inner"><a class="logo" href="#top"><img src="logo-original.png" alt="Підгірʼя"></a><nav class="nav"><a href="#spaces">Простір</a><a href="#packages">Пакети</a><a href="#calculator">Калькулятор</a><a href="#formats">Формати</a><a href="#contact">Контакти</a><a class="nav-cta" href="#contact">Забронювати</a></nav><button class="menu" aria-label="Меню">☰</button></div></header>
