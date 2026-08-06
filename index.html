@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#12100d" />
+  <title>Події у Підгірʼї — Буковель</title>
+  <meta name="description" content="Конференції, весілля, бізнес-форуми та приватні події у комплексі Підгірʼя, Буковель." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a href="#top" class="brand"><img src="logo.png" alt="Hotel Podgore" /></a>
+    <nav class="desktop-nav">
+      <a href="#events">Формати</a><a href="#packages">Пакети</a><a href="#calculator">Калькулятор</a><a href="#gallery">Галерея</a>
+    </nav>
+    <a class="button button-small" href="#request">Запит на дату</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="hero">
+      <div class="hero-media" id="heroMedia"><div class="media-placeholder"><span>Місце для головного фото або відео зали</span></div></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">HOTEL PODGORE · БУКОВЕЛЬ</p>
+        <h1>Події, які<br><em>залишаються</em> у памʼяті</h1>
+        <p class="hero-copy">Від бізнес-форуму до весілля — простір, команда та сервіс для події, продуманої до деталей.</p>
+        <div class="hero-actions">
+          <a class="button" href="#calculator">Розрахувати подію</a>
+          <a class="text-link" href="#gallery">Переглянути простір <span>↗</span></a>
+        </div>
+      </div>
+      <div class="scroll-hint">SCROLL <i></i></div>
+    </section>
+
+    <section class="intro section reveal">
+      <p class="eyebrow">ОДИН ПРОСТІР — БАГАТО СЦЕНАРІЇВ</p>
+      <div class="intro-grid"><h2>Ваш формат.<br>Наша увага до деталей.</h2><p>Зала комплексу «Підгірʼя» легко адаптується під ділові, святкові та камерні події. Оберіть формат — ми допоможемо продумати решту.</p></div>
+    </section>
+
+    <section class="events section" id="events">
+      <div class="section-heading reveal"><p class="eyebrow">ФОРМАТИ ПОДІЙ</p><h2>Створено для важливих моментів</h2></div>
+      <div class="event-grid" id="eventGrid"></div>
+    </section>
+
+    <section class="feature-band reveal">
+      <div><strong>Буковель</strong><span>Локація у серці Карпат</span></div>
+      <div><strong>Під ключ</strong><span>Від меню до технічного супроводу</span></div>
+      <div><strong>Проживання</strong><span>Готель, SPA та відпочинок поруч</span></div>
+      <div><strong>Персонально</strong><span>Окремий координатор події</span></div>
+    </section>
+
+    <section class="packages section" id="packages">
+      <div class="section-heading reveal"><p class="eyebrow">ПАКЕТНІ РІШЕННЯ</p><h2>Оберіть рівень організації</h2></div>
+      <div class="package-tabs reveal" id="packageTabs"></div>
+      <article class="package-panel reveal" id="packagePanel"></article>
+    </section>
+
+    <section class="calculator section" id="calculator">
+      <div class="calculator-shell reveal">
+        <div class="calc-form">
+          <p class="eyebrow">КОНСТРУКТОР ПОДІЇ</p><h2>Розрахуйте бюджет за хвилину</h2>
+          <label>Тип події<select id="eventType"></select></label>
+          <div class="two-cols"><label>Кількість гостей<input id="guests" type="number" min="10" max="500" value="50" /></label><label>Пакет<select id="packageSelect"></select></label></div>
+          <p class="field-title">Додаткові послуги</p><div class="extras" id="extras"></div>
+        </div>
+        <aside class="total-card">
+          <p class="eyebrow">ОРІЄНТОВНИЙ РОЗРАХУНОК</p>
+          <div class="summary-line"><span>Гостей</span><strong id="summaryGuests">50</strong></div>
+          <div class="summary-line"><span>Пакет</span><strong id="summaryPackage">—</strong></div>
+          <div class="summary-line"><span>Вартість на особу</span><strong id="summaryPpp">—</strong></div>
+          <div class="summary-line"><span>Додаткові послуги</span><strong id="summaryExtras">—</strong></div>
+          <div class="grand-total"><span>Орієнтовно разом</span><strong id="grandTotal">0 грн</strong></div>
+          <small>Фінальна вартість залежить від дати, меню, тривалості та індивідуальних побажань.</small>
+          <a class="button button-full" href="#request">Отримати пропозицію</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-heading reveal"><p class="eyebrow">ПРОСТІР</p><h2>Місце для ваших фотографій</h2><p>Фотографії додаються та змінюються через приховану адмін-панель.</p></div>
+      <div class="masonry" id="galleryGrid"></div>
+    </section>
+
+    <section class="why section reveal">
+      <div class="why-copy"><p class="eyebrow">БІЛЬШЕ, НІЖ ЗАЛА</p><h2>Усе необхідне — в одному комплексі</h2></div>
+      <div class="benefits" id="benefits"></div>
+    </section>
+
+    <section class="request section" id="request">
+      <div class="request-image reveal"><div class="media-placeholder tall"><span>Місце для атмосферного фото події</span></div></div>
+      <form class="request-form reveal" id="requestForm">
+        <p class="eyebrow">ЗАБРОНЮВАТИ ДАТУ</p><h2>Розкажіть про вашу подію</h2>
+        <div class="two-cols"><label>Ваше імʼя<input required name="name" placeholder="Імʼя" /></label><label>Телефон<input required name="phone" placeholder="+38 (___) ___-__-__" /></label></div>
+        <div class="two-cols"><label>Дата події<input name="date" type="date" /></label><label>Кількість гостей<input name="guests" type="number" value="50" /></label></div>
+        <label>Коментар<textarea name="comment" rows="4" placeholder="Формат, побажання, потрібні послуги"></textarea></label>
+        <button class="button" type="submit">Надіслати запит</button><p class="form-note" id="formNote"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><img src="logo.png" alt="Hotel Podgore"/><p>Події у комплексі «Підгірʼя», Буковель</p><a href="admin.html">Admin</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
