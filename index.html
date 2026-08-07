@@ -804,91 +804,65 @@
 </style>
 
 
-<style id="podgore-logo-fix-v2">
 
-/* ===== LOGO FIX ===== */
 
-.header,
-.header-inner{
-  background:#f3efe7 !important;
-}
 
-/* контейнер логотипа */
+<style id="logo-clean-final">
 .logo{
   display:flex !important;
   align-items:center !important;
   justify-content:flex-start !important;
-  overflow:visible !important;
   background:transparent !important;
+  overflow:visible !important;
   border:0 !important;
-  box-shadow:none !important;
 }
 
-/* сам логотип */
 .logo img,
 .header .logo img,
 .header-inner .logo img{
   display:block !important;
-  width:240px !important;
+  width:245px !important;
   height:auto !important;
   max-width:none !important;
   object-fit:contain !important;
-
-  /* прибираємо візуально білий фон */
-  mix-blend-mode:multiply !important;
-
+  object-position:left center !important;
   background:transparent !important;
+  mix-blend-mode:normal !important;
+  filter:none !important;
   border:0 !important;
   box-shadow:none !important;
   padding:0 !important;
-  margin:0 !important;
 }
 
-/* висота шапки */
 .header-inner{
-  min-height:110px !important;
-  height:110px !important;
+  min-height:108px !important;
+  height:108px !important;
 }
 
-/* footer */
 .footer-logo{
-  width:230px !important;
+  width:225px !important;
   height:auto !important;
-  mix-blend-mode:multiply !important;
   background:transparent !important;
+  mix-blend-mode:normal !important;
 }
 
-/* MOBILE */
 @media(max-width:768px){
-
   .header-inner{
-    min-height:92px !important;
-    height:92px !important;
+    min-height:88px !important;
+    height:88px !important;
     padding-left:16px !important;
-    padding-right:16px !important;
   }
-
-  .logo img,
-  .header .logo img,
-  .header-inner .logo img{
-    width:185px !important;
-    height:auto !important;
-  }
-
-  .footer-logo{
-    width:190px !important;
-  }
-}
-
-@media(max-width:430px){
 
   .logo img,
   .header .logo img,
   .header-inner .logo img{
     width:175px !important;
   }
-}
 
+  .footer-logo{
+    width:175px !important;
+  }
+}
 </style>
 
 </head>
