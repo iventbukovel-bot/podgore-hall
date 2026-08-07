@@ -803,6 +803,94 @@
 }
 </style>
 
+
+<style id="podgore-logo-fix-v2">
+
+/* ===== LOGO FIX ===== */
+
+.header,
+.header-inner{
+  background:#f3efe7 !important;
+}
+
+/* контейнер логотипа */
+.logo{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  overflow:visible !important;
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+}
+
+/* сам логотип */
+.logo img,
+.header .logo img,
+.header-inner .logo img{
+  display:block !important;
+  width:240px !important;
+  height:auto !important;
+  max-width:none !important;
+  object-fit:contain !important;
+
+  /* прибираємо візуально білий фон */
+  mix-blend-mode:multiply !important;
+
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  padding:0 !important;
+  margin:0 !important;
+}
+
+/* висота шапки */
+.header-inner{
+  min-height:110px !important;
+  height:110px !important;
+}
+
+/* footer */
+.footer-logo{
+  width:230px !important;
+  height:auto !important;
+  mix-blend-mode:multiply !important;
+  background:transparent !important;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .header-inner{
+    min-height:92px !important;
+    height:92px !important;
+    padding-left:16px !important;
+    padding-right:16px !important;
+  }
+
+  .logo img,
+  .header .logo img,
+  .header-inner .logo img{
+    width:185px !important;
+    height:auto !important;
+  }
+
+  .footer-logo{
+    width:190px !important;
+  }
+}
+
+@media(max-width:430px){
+
+  .logo img,
+  .header .logo img,
+  .header-inner .logo img{
+    width:175px !important;
+  }
+}
+
+</style>
+
 </head>
 <body>
 <header class="header"><div class="wrap header-inner"><a class="logo" href="#top"><img src="assets/logo-original.png" alt="Підгірʼя"></a><nav class="nav"><a href="#spaces">Простір</a><a href="#packages">Пакети</a><a href="#calculator">Калькулятор</a><a href="#formats">Формати</a><a href="#contact">Контакти</a><a class="nav-cta" href="#contact">Забронювати</a></nav><button class="menu" aria-label="Меню">☰</button></div></header>
