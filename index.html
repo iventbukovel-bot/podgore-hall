@@ -475,6 +475,123 @@
 }
 </style>
 
+
+<style id="mobile-final-fix">
+@media(max-width:768px){
+
+  /* HERO */
+  .hero{
+    min-height:auto !important;
+    padding:28px 0 26px !important;
+  }
+
+  .hero-content{
+    padding:0 18px !important;
+  }
+
+  .hero h1{
+    font-size:46px !important;
+    line-height:.92 !important;
+    margin:10px 0 20px !important;
+  }
+
+  .hero p{
+    font-size:15px !important;
+    line-height:1.65 !important;
+    margin-bottom:24px !important;
+  }
+
+  .hero-stats,
+  .stats,
+  .hero-metrics{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    margin-top:24px !important;
+    border-top:1px solid rgba(255,255,255,.18) !important;
+    border-bottom:1px solid rgba(255,255,255,.18) !important;
+  }
+
+  .hero-stats > *,
+  .stats > *,
+  .hero-metrics > *{
+    padding:20px 14px !important;
+    min-height:105px !important;
+    border-right:1px solid rgba(255,255,255,.14) !important;
+  }
+
+  .hero-stats > *:nth-child(even),
+  .stats > *:nth-child(even),
+  .hero-metrics > *:nth-child(even){
+    border-right:0 !important;
+  }
+
+  /* EXTRA SERVICES */
+  #calculator .extras{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:10px !important;
+  }
+
+  #calculator .extra{
+    position:relative !important;
+    min-height:74px !important;
+    padding:16px 16px 16px 52px !important;
+    border:1px solid rgba(234,216,173,.22) !important;
+    background:rgba(255,255,255,.025) !important;
+  }
+
+  #calculator .extra::before,
+  #calculator .extra::after{
+    display:none !important;
+    content:none !important;
+  }
+
+  #calculator .extra > div,
+  #calculator .extra > span{
+    width:auto !important;
+    height:auto !important;
+    min-height:0 !important;
+    padding:0 !important;
+    margin:0 !important;
+    border:0 !important;
+    background:none !important;
+  }
+
+  #calculator .extra input[type="checkbox"]{
+    -webkit-appearance:none !important;
+    appearance:none !important;
+    position:absolute !important;
+    left:16px !important;
+    top:50% !important;
+    transform:translateY(-50%) !important;
+    width:20px !important;
+    height:20px !important;
+    min-height:20px !important;
+    padding:0 !important;
+    border:1px solid #d5b36f !important;
+    background:transparent !important;
+  }
+
+  #calculator .extra input[type="checkbox"]:checked{
+    background:#d5b36f !important;
+    box-shadow:inset 0 0 0 4px #173f37 !important;
+  }
+
+  #calculator .extra b,
+  #calculator .extra strong{
+    display:block !important;
+    color:#fff !important;
+    font-size:15px !important;
+    margin-bottom:4px !important;
+  }
+
+  #calculator .extra span{
+    color:rgba(255,255,255,.62) !important;
+    font-size:13px !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <header class="header"><div class="wrap header-inner"><a class="logo" href="#top"><img src="logo-original.png" alt="Підгірʼя"></a><nav class="nav"><a href="#spaces">Простір</a><a href="#packages">Пакети</a><a href="#calculator">Калькулятор</a><a href="#formats">Формати</a><a href="#contact">Контакти</a><a class="nav-cta" href="#contact">Забронювати</a></nav><button class="menu" aria-label="Меню">☰</button></div></header>
