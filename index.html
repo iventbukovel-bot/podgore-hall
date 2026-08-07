@@ -476,29 +476,84 @@
 </style>
 
 
-<style id="mobile-final-fix">
+
+
+
+<style id="mobile-redesign-final">
 @media(max-width:768px){
+
+  html,body{
+    width:100% !important;
+    overflow-x:hidden !important;
+  }
+
+  .wrap,
+  .container{
+    width:calc(100% - 28px) !important;
+    max-width:none !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  /* HEADER */
+  .header-inner{
+    height:72px !important;
+    min-height:72px !important;
+    padding:0 14px !important;
+  }
+
+  .logo img{
+    width:108px !important;
+    height:auto !important;
+  }
+
+  .nav a{
+    display:none !important;
+  }
+
+  .nav-toggle,
+  .menu-toggle,
+  .burger{
+    display:flex !important;
+  }
 
   /* HERO */
   .hero{
     min-height:auto !important;
-    padding:28px 0 26px !important;
+    padding:34px 0 28px !important;
   }
 
   .hero-content{
+    width:100% !important;
     padding:0 18px !important;
   }
 
   .hero h1{
     font-size:46px !important;
     line-height:.92 !important;
-    margin:10px 0 20px !important;
+    margin:12px 0 20px !important;
+    max-width:100% !important;
   }
 
   .hero p{
     font-size:15px !important;
     line-height:1.65 !important;
-    margin-bottom:24px !important;
+    margin:0 0 24px !important;
+    max-width:100% !important;
+  }
+
+  .hero-actions,
+  .actions{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:10px !important;
+  }
+
+  .hero-actions .btn,
+  .actions .btn{
+    width:100% !important;
+    min-height:54px !important;
+    justify-content:center !important;
   }
 
   .hero-stats,
@@ -506,17 +561,18 @@
   .hero-metrics{
     display:grid !important;
     grid-template-columns:1fr 1fr !important;
-    margin-top:24px !important;
-    border-top:1px solid rgba(255,255,255,.18) !important;
-    border-bottom:1px solid rgba(255,255,255,.18) !important;
+    margin-top:26px !important;
+    border-top:1px solid rgba(255,255,255,.16) !important;
+    border-bottom:1px solid rgba(255,255,255,.16) !important;
   }
 
   .hero-stats > *,
   .stats > *,
   .hero-metrics > *{
-    padding:20px 14px !important;
-    min-height:105px !important;
-    border-right:1px solid rgba(255,255,255,.14) !important;
+    min-height:98px !important;
+    padding:18px 14px !important;
+    border-right:1px solid rgba(255,255,255,.12) !important;
+    border-bottom:1px solid rgba(255,255,255,.10) !important;
   }
 
   .hero-stats > *:nth-child(even),
@@ -525,7 +581,82 @@
     border-right:0 !important;
   }
 
-  /* EXTRA SERVICES */
+  /* PHOTO BLOCK */
+  .venue-media,
+  .venue-photo{
+    width:100% !important;
+    height:330px !important;
+    min-height:330px !important;
+    margin:24px 0 !important;
+  }
+
+  .venue-photo-content{
+    left:20px !important;
+    right:20px !important;
+    bottom:22px !important;
+  }
+
+  .venue-photo-content h3{
+    font-size:38px !important;
+    line-height:.95 !important;
+  }
+
+  /* GENERAL SECTIONS */
+  .section{
+    padding:52px 0 !important;
+  }
+
+  .section-head{
+    display:block !important;
+    margin-bottom:26px !important;
+  }
+
+  .section-head h2{
+    font-size:42px !important;
+    line-height:.95 !important;
+  }
+
+  /* PACKAGES */
+  .pack-grid{
+    grid-template-columns:1fr !important;
+    gap:12px !important;
+  }
+
+  .pack{
+    padding:22px 18px !important;
+  }
+
+  /* CALCULATOR */
+  #calculator{
+    padding:52px 0 !important;
+  }
+
+  #calculator .calculator,
+  #calculator .calc,
+  #calculator .calc-wrap{
+    display:block !important;
+    width:100% !important;
+    max-width:none !important;
+    margin:18px 0 0 !important;
+  }
+
+  #calculator .calc-controls,
+  #calculator .calculator-left,
+  #calculator .calc-left,
+  #calculator .calc-result,
+  #calculator .calculator-right,
+  #calculator .calc-summary,
+  #calculator .calc-right{
+    width:100% !important;
+    min-height:auto !important;
+    padding:24px 18px !important;
+  }
+
+  #calculator h2,
+  #calculator h3{
+    font-size:38px !important;
+  }
+
   #calculator .extras{
     display:grid !important;
     grid-template-columns:1fr !important;
@@ -534,16 +665,19 @@
 
   #calculator .extra{
     position:relative !important;
+    display:flex !important;
+    align-items:center !important;
     min-height:74px !important;
     padding:16px 16px 16px 52px !important;
     border:1px solid rgba(234,216,173,.22) !important;
     background:rgba(255,255,255,.025) !important;
   }
 
+  /* ПРИБИРАЄМО ПУСТІ ПРЯМОКУТНИКИ */
   #calculator .extra::before,
   #calculator .extra::after{
-    display:none !important;
     content:none !important;
+    display:none !important;
   }
 
   #calculator .extra > div,
@@ -582,12 +716,89 @@
     display:block !important;
     color:#fff !important;
     font-size:15px !important;
+    line-height:1.2 !important;
     margin-bottom:4px !important;
   }
 
   #calculator .extra span{
+    display:block !important;
     color:rgba(255,255,255,.62) !important;
     font-size:13px !important;
+    line-height:1.35 !important;
+  }
+
+  #calculator .extra:has(input:checked){
+    border-color:#d5b36f !important;
+    background:rgba(213,179,111,.08) !important;
+  }
+
+  #calculator .calc-total,
+  #calculator [class*="total"]{
+    font-size:56px !important;
+  }
+
+  /* CONTACT */
+  #contact{
+    padding:52px 0 !important;
+  }
+
+  #contact .contact,
+  #contact .contact-grid{
+    display:block !important;
+  }
+
+  #contact .contact-info{
+    margin-bottom:28px !important;
+  }
+
+  #contact h2{
+    font-size:42px !important;
+    line-height:.95 !important;
+  }
+
+  #leadForm,
+  #contact form,
+  #contact .contact-box{
+    width:100% !important;
+    max-width:none !important;
+    padding:22px 16px !important;
+  }
+
+  #leadForm .contact-form,
+  #contact .contact-form{
+    grid-template-columns:1fr !important;
+    gap:10px !important;
+  }
+
+  #leadForm input,
+  #leadForm select,
+  #leadForm textarea,
+  #contact form input,
+  #contact form select,
+  #contact form textarea{
+    min-height:52px !important;
+    font-size:16px !important;
+  }
+
+  #leadForm textarea,
+  #contact form textarea{
+    min-height:100px !important;
+  }
+
+  #leadForm button[type="submit"],
+  #contact form button[type="submit"]{
+    width:100% !important;
+    min-height:56px !important;
+  }
+
+  /* FOOTER */
+  .footer-grid{
+    grid-template-columns:1fr !important;
+    gap:24px !important;
+  }
+
+  .footer{
+    padding:38px 0 20px !important;
   }
 }
 </style>
