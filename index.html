@@ -931,6 +931,87 @@
 
 </style>
 
+
+<style id="podgore-logo-size-final">
+
+/* ===== FINAL LOGO SIZE ===== */
+
+.header .logo,
+.header-inner .logo{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    width:auto !important;
+    height:auto !important;
+    overflow:visible !important;
+    background:transparent !important;
+    border:0 !important;
+}
+
+.header .logo img,
+.header-inner .logo img{
+    display:block !important;
+    width:185px !important;
+    height:auto !important;
+    max-width:none !important;
+    object-fit:contain !important;
+    object-position:left center !important;
+    background:transparent !important;
+    border:0 !important;
+    padding:0 !important;
+    margin:0 !important;
+    box-shadow:none !important;
+}
+
+.header-inner{
+    min-height:94px !important;
+    height:94px !important;
+}
+
+/* TABLET */
+@media(max-width:900px){
+    .header .logo img,
+    .header-inner .logo img{
+        width:165px !important;
+    }
+
+    .header-inner{
+        min-height:86px !important;
+        height:86px !important;
+    }
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .header .logo img,
+    .header-inner .logo img{
+        width:145px !important;
+        height:auto !important;
+    }
+
+    .header-inner{
+        min-height:80px !important;
+        height:80px !important;
+        padding-left:16px !important;
+        padding-right:16px !important;
+    }
+}
+
+/* SMALL MOBILE */
+@media(max-width:430px){
+    .header .logo img,
+    .header-inner .logo img{
+        width:138px !important;
+    }
+
+    .header-inner{
+        min-height:76px !important;
+        height:76px !important;
+    }
+}
+
+</style>
+
 </head>
 <body>
 <header class="header"><div class="wrap header-inner"><a class="logo" href="#top"><img src="assets/logo-original.png" alt="Підгірʼя"></a><nav class="nav"><a href="#spaces">Простір</a><a href="#packages">Пакети</a><a href="#calculator">Калькулятор</a><a href="#formats">Формати</a><a href="#contact">Контакти</a><a class="nav-cta" href="#contact">Забронювати</a></nav><button class="menu" aria-label="Меню">☰</button></div></header>
